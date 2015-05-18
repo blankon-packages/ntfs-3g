@@ -1,3 +1,9 @@
+ntfs-3g (1:2014.2.15AR.3-1blankon2) tambora; urgency=medium
+
+  * Add back fuse [linux-any], fuse4bsd [kfreebsd-any] 
+
+ -- Mijortsa <azis.astrojim@surabaya.di.blankon.in>  Mon, 18 May 2015 22:33:23 +0700
+
 ntfs-3g (1:2014.2.15AR.3-1blankon1) tambora; urgency=medium
 
   * Upstream release
