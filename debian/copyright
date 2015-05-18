@@ -4,7 +4,7 @@ Upstream-Contact: http://www.tuxera.com/forum/
 Source: http://www.tuxera.com/community/ntfs-3g-advanced/
 
 Files: *
-Copyright: 2000-2013 ntfs-3g Development Team
+Copyright: 2000-2014 ntfs-3g Development Team
 License: GPL-2+
 
 Files: include/fuse-lite/* libfuse-lite/*
@@ -12,8 +12,9 @@ Copyright: 2000-2013 ntfs-3g Development Team
 License: LGPL-2+
 
 Files: debian/*
-Copyright: 2006-2010 Adam Cecile <gandalf@le-vert.net>
-           2011-2013 Daniel Baumann <mail@daniel-baumann.ch>
+Copyright: 2014 Laszlo Boszormenyi (GCS) <gcs@debian.org>,
+ 2011-2014 Daniel Baumann <mail@daniel-baumann.ch>,
+ 2006-2010 Adam Cecile <gandalf@le-vert.net>
 License: GPL-2+
 
 License: GPL-2+

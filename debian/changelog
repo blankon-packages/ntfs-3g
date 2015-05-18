@@ -1,8 +1,122 @@
-ntfs-3g (1:2013.1.13AR.2-1blankon1) suroboyo; urgency=low
+ntfs-3g (1:2014.2.15AR.3-1blankon1) tambora; urgency=medium
 
-  * New upstream release 
+  * Upstream release
 
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Thu, 06 Jun 2013 13:37:24 +0700
+ -- Mijortsa <azis.astrojim@surabaya.di.blankon.in>  Mon, 18 May 2015 14:18:20 +0700
+
+ntfs-3g (1:2014.2.15AR.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix FUSE fallback for old 2.6.x kernels (closes: #766911).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 13 Nov 2014 05:43:59 +0000
+
+ntfs-3g (1:2014.2.15AR.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove 0001-type-inconsistencies.patch and 0002-exit-values.patch , this
+    release contains those.
+  * Update Standards-Version to 3.9.6 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 05 Oct 2014 09:34:12 +0000
+
+ntfs-3g (1:2014.2.15AR.1-5) unstable; urgency=low
+
+  * New maintainer (closes: #756549).
+  * Add watch file.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 30 Jul 2014 21:17:37 +0000
+
+ntfs-3g (1:2014.2.15AR.1-4) unstable; urgency=low
+
+  * I don't care anymore, not worth it.. orphaning.
+
+ -- Daniel Baumann <daniel@laptop.127011.net>  Fri, 25 Jul 2014 16:39:45 +0200
+
+ntfs-3g (1:2014.2.15AR.1-3) unstable; urgency=low
+
+  * Building against GnuTLS 3 (Closes: #752312).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 24 Jun 2014 16:33:06 +0200
+
+ntfs-3g (1:2014.2.15AR.1-2) unstable; urgency=low
+
+  * Adding patch from upstream to fix type inconsistencies in
+    ntfs_initialize_file_security (Closes: #749517).
+  * Moving undocumented ntfsdump_logfile, ntfsmftalloc, and ntfsck to
+    ntfs-3g-dev (Closes: #747872).
+  * Adding patch from upstream to correct exit values (Closes: #741992).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 11 Jun 2014 07:05:11 +0200
+
+ntfs-3g (1:2014.2.15AR.1-1) unstable; urgency=low
+
+  * Merging upstream version 2014.2.15AR.1:
+    - mapps the runlist when filling an initial hole (Closes: #743734).
+  * Updating upstream changelog.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 12 Apr 2014 09:58:48 +0200
+
+ntfs-3g (1:2013.1.13AR.4-2) unstable; urgency=low
+
+  * Updating year in copyright file.
+  * Building with dh --parallel.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Mon, 31 Mar 2014 21:17:35 +0200
+
+ntfs-3g (1:2013.1.13AR.4-1) experimental; urgency=low
+
+  * Merging upstream version 2013.1.13AR.4.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 01 Mar 2014 12:47:19 +0100
+
+ntfs-3g (1:2013.1.13AR.3-4) experimental; urgency=low
+
+  * Updating readme file.
+  * Dropping debconf configurability night-mare which is actually not
+    usefull anymore these days.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 28 Dec 2013 15:27:25 +0100
+
+ntfs-3g (1:2013.1.13AR.3-3) experimental; urgency=low
+
+  * Updating debconf defaults for setuid-root and initramfs to more
+    suiteable desktop usage.
+  * Cosmetically Correcting redirection to /dev/null in dpkg-statoverride
+    handling in postinst.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Sat, 28 Dec 2013 14:33:38 +0100
+
+ntfs-3g (1:2013.1.13AR.3-2) experimental; urgency=low
+
+  * Updating to standards version 3.9.5.
+  * Building with internal fuse.
+  * Building with dh-autoreconf (Closes: #732544).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 24 Dec 2013 12:43:36 +0100
+
+ntfs-3g (1:2013.1.13AR.3-1) experimental; urgency=low
+
+  * Merging upstream version 2013.1.13AR.3.
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Tue, 01 Oct 2013 20:34:12 +0200
+
+ntfs-3g (1:2013.1.13AR.2-3) experimental; urgency=low
+
+  * Adding vcs fields.
+  * Wrapping control fields.
+  * Updating vcs fields.
+  * Adding Brazilian Portuguese debconf translations from Adriano Rafael
+    Gomes <adrianorg@arg.eti.br> (Closes: #718712).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Wed, 07 Aug 2013 10:51:45 +0200
+
+ntfs-3g (1:2013.1.13AR.2-2) experimental; urgency=low
+
+  * Adding updated Japanese debconf translations from victory
+    <victory.deb@gmail.com> (Closes: #712917).
+
+ -- Daniel Baumann <mail@daniel-baumann.ch>  Thu, 20 Jun 2013 22:24:26 +0200
 
 ntfs-3g (1:2013.1.13AR.2-1) experimental; urgency=low
 

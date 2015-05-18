@@ -3,11 +3,14 @@
 set -e
 
 case "${1}" in
-	purge)
-		rm -f /etc/default/ntfs-3g
+	remove)
+		if [ -x /usr/sbin/update-initramfs ]
+		then
+			update-initramfs -u
+		fi
 		;;
 
-	remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+	purge|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 
 		;;
 

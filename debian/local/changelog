@@ -44,6 +44,65 @@
    Items prefixed by a hollow bullet mainly impact builds with Posix ACL
    activated.
 
+Version 2014.2.15AR.1 (Apr 7, 2014)
+
+     * fixed ioctl() error return for ntfsclone on Windows
+     * implemented an extended attribute to get/set EAs
+     * added a license section to the README file
+     * mapped the runlist when filling an initial hole
+
+Version 2013.1.13AR.4 (Feb 11, 2014)
+
+     * logged more details when an attribute is not found
+     * ignored unmapped regions when checking whether sparse (Forrest Liu)
+     * made ntfsdecrypt compatible with libgrypt-1.6
+     * allowed setting the serial number to 0x8000000000000000 or greater
+       (E. Talsma)
+     * fixed an endianness error in ntfsundelete
+     * avoided displaying sync errors in ntfscp with --no-action
+     * added option --min-fragments to reduce fragmentation in ntfscp
+     * improved the description of the silent option in the manual
+     * fixed an erroneous reference to compression in the manual
+     * fixed default option for compression in the manual
+     * avoided unnormalized parent directory name in ntfscp
+     * avoided double opening of parent directory name in ntfscp
+     * reset the output file to favour appending to image in ntfsclone
+     * avoided full runlist updating in more situations
+     * traced dirtying runlists and updated them accordingly
+     * used MFT record 15 for the first extent to MFT:DATA
+     * updated ctime after setting an ACL
+     * fixed marking device as closed (Windows variant)
+     * fixed endianness bugs in ntfscluster
+     * improved the warning for analyzing an extent in ntfscluster
+       (utils.c)
+     * added a summary of inodes found by ntfscluster
+     * rejected reserved files names when option windows_names is set
+     * fixed checking whether utimensat() applies to current atime
+     * accepted encryption keys whose EFS purpose is not the first one
+     * implemented updating an encrypted file in ntfsdecrypt
+     * switched to the relocated bitmap for delayed relocations in
+       ntfsresize
+
+Version 2013.1.13AR.3 (Sep 18, 2013)
+
+     * fixed processing compressed data beyond file size
+     * set the backup boot sector in ntfsresize when the size is reliable
+     * reserved a single sector for the backup boot sector
+     * improved the manual description of the size option of ntfsresize
+     * fixed delayed deletion of files opened multiple times (lowntfs-3g)
+     * output the modification time when scanning files by ntfsundelete
+     * forced 64-bit computation of inode number in ntfsundelete
+     * silenced a compiler warning in ntfs-3g.probe
+     * fixed format translations for Windows
+     * fixed dealing with errors getting the file size from Windows
+     * fixed creating a new image file on Windows
+     * fixed testing for a wiped out stream
+     * fixed expanding a resident attribute without inserting holes
+     * silenced warnings by gcc >= 4.8 about aliasing
+     * silenced warnings by gcc >= 4.8 about non-checked return values
+     * fixed a memory leak in ntfscmp
+     * allowed DACLs to to not have any ACE
+
 Version 2013.1.13AR.2 (May 8, 2013)
 
      * made compilation with --enable-really-static option to ./configure
